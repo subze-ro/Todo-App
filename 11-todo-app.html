@@ -2,28 +2,27 @@
 <html>
 <head>
    <title>Todo App</title>
+   <link rel="stylesheet" href="11-todo-app.css">
 </head>
 <body>
   
   <!--This version of the app displays the todo list as an array on the console-->
-  <p>Todo List Practice 1</p>
-  <input type="text" placeholder="todo name" class="js-name-input">
+  <p>Todo List</p>
 
-  <button onclick="
-  addTodo();
-  ">Add</button>
+  <div class="todo-input-grid">
+      <input type="text" placeholder="todo name" class="js-name-input name-input">
+      <input type="date"
+      class="js-due-date-input do-date-input">
+
+      <button onclick="
+      addTodo();
+      " class="add-todo-button">Add</button>
+  </div>
 
 <!--This version of the app takes the new todo and puts it on the page instead of the console-->
 
-  <p>Todo App Practice 2</p>
-  <input type="text" placeholder="todo name"
-  class="js-name-input2">
-
-  <button onclick="
-    addtodo2()
-    " >Add</button>
-
-  <div class="js-todo-list"></div>
+ 
+  <div class="js-todo-list todo-grid"></div>
 
  
 
