@@ -1,4 +1,3 @@
-// version one of the app. displaying the todo list as an array on the console
 const todoList =[{
         name: 'make dinner', 
         dueDate: '2025-1-23', 
@@ -13,7 +12,7 @@ function renderTodoList() {
 
       let todoListHTML = ``;
 
-      todoList.forEach(function (todoObject, index) {
+      todoList.forEach((todoObject, index) => {
        
         const { name, dueDate } = todoObject;
         const html = 
